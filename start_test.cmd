@@ -24,6 +24,6 @@ if "%~2"==""  (
 ) 
 set/A EXERCISE_NUM=%2
 if %EXERCISE_NUM% LSS %TEN% (set "EXERCISE=0%EXERCISE_NUM%") 
-if %CHAPTER_NUM% LSS %TEN% (set "CHAPTER=0%CHAPTER_NUM%") 
+if %CHAPTER_NUM% LSS %TEN% (set "CHAPTER=0%CHAPTER_NUM%") ELSE (set "CHAPTER=%CHAPTER_NUM%")
 set "TEST_CLASS=TestChapter%CHAPTER%ex%EXERCISE%"
 python -m pytest -v "%TEST_FILE%.py::%TEST_CLASS%"
