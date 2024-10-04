@@ -258,7 +258,7 @@ class TestChapter03ex15:
     @pytest.mark.solution_runner(
         [("-3", "1"), ("3",), ("-100", "101"), ("-1", "-2", "6235")], 0.1
     )
-    def test_solution_14_output(self, solution_runner):
+    def test_solution_15_output(self, solution_runner):
         solution_out = solution_runner
         expected_output = [
             "1\n",
