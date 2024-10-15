@@ -163,6 +163,6 @@ cython_debug/
 
 # My_solutions
 .vscode
-.vs
+.vs/
 tests/
 start_test.cmd
